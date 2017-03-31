@@ -36,10 +36,9 @@
 }
 
 .cover {
-	padding: 0 20px;
 	position: relative;
-	top: 50%;
-	transform: translateY(60%); 
+	top: 40%;
+	transform: translateY(40%); 
 }
 
 .site-wrapper-inner {
@@ -48,7 +47,7 @@
 }
 
 .mastfoot {
-	padding: 30px;
+	padding: 2%;
 	width: 100%;
     position: fixed;
     bottom: 0;

@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# The font-awesome font bundled as an asset for the rails asset pipeline 
+gem "font-awesome-rails"
 # A ruby wrapper for the Spotify Web API
 gem 'rspotify'
 # Twitter Bootstrap for Rails 5 - 4.x Asset Pipeline

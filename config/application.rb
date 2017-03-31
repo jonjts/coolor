@@ -14,6 +14,6 @@ module Coolor
     config.time_zone = 'Brasilia'
     config.i18n.default_locale = :'pt-BR'
 
-    RSpotify::authenticate("<your_client_id>", "<your_client_secret>")
+    RSpotify::authenticate("e5932d3611644ed1b7ac08b0140f2b59", "6cdea30120ce4de58ef1d2207824c7e3")
   end
 end

@@ -20,6 +20,11 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  links:
+    desenvolvido_por: "Developed by "
+    log_in: "Sign in with Spotify"
+  texts:
+    sobre: "Coolor is an application to provide songs using fellings found in colors selected by user. Use your spotify account to try it."
   activerecord:
     errors:
       messages:

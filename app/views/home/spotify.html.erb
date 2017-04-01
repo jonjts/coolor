@@ -1,0 +1,43 @@
+<header>
+  <%= nav_bar :static => :top do %>
+    <%= menu_group :pull => :right do %>
+      <div class="pull-right user_padding">
+        <%= @spotify_user.display_name + "  " %>
+        <%= image_tag(@spotify_user.images[0].url, class: "user_img" ) %>
+      </div>
+    <% end %>
+  <% end %>
+</header>
+<div class="container">
+  <div class="row" style="text-align: center;padding-bottom: 67px;">
+    <div class="col-xs-12" style="padding-bottom: 10px;">
+      <%= link_to (fa_icon "", text: "", class: "fa-2x") , '/auth/spotify', class: 'btn btn-lg btn-default  circle', id: "the_color" %>
+    </div>
+    <div class="col-md-12 "  >
+      <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:3rgsDhGHZxZ9sB9DQWQfuf" width="200" height="300" frameborder="0" allowtransparency="true" class="btn-block"></iframe>
+    </div>
+  </div>
+</div>
+<footer class="mastfoot">
+  <div class="inner">
+    <p><%= t('links.desenvolvido_por')%> <a href="https://twitter.com/jonjts"  target="_blank">@jonjts</a></p>
+  </div>
+</footer>
+<script type="text/javascript">
+  $(document).ready(function() {
+                  var animate_loop, colors, i;
+                  colors = ['#FFB30C', '#58EC00', '#0087EC', '#EEEEEE', '#FF5A00'];
+                  i = 0;
+                  animate_loop = function() {
+                      $('.btn').addClass('magictime vanishIn');
+                      $('#the_color').animate({
+                          backgroundColor: colors[i++ % colors.length]}, 3000, function() {
+                              animate_loop();
+                          });
+                  };
+                  animate_loop();
+              });
+                document.addEventListener("turbolinks:load", function() {
+  
+                });
+</script>

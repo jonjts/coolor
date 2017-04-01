@@ -5,7 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-# The font-awesome font bundled as an asset for the rails asset pipeline 
+# gem for magic.css
+gem "magic-rails"
+# jQuery UI dependency.
+gem 'jquery-ui-rails'
+gem 'omniauth-oauth2', '~> 1.3.1'
+# The font-awesome font bundled as an asset for the rails asset pipeline
 gem "font-awesome-rails"
 # A ruby wrapper for the Spotify Web API
 gem 'rspotify'

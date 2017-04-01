@@ -3,7 +3,6 @@
   <head>
     <title>Coolor</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag 'favicon.ico' %>
@@ -11,12 +10,10 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#008966">
     <meta name="description" content="<%= t('texts.sobre')%>">
-     <!-- Add to homescreen for Safari on iOS -->
+    <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#008966">
-
   </head>
-
   <body>
     <%= yield %>
   </body>

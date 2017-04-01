@@ -13,12 +13,36 @@
  *= require_tree .
  *= require_self
  *= require font-awesome
+ *= require magic
  */
 
 .turbolinks-progress-bar {
   height: 5px;
   background-color: #00BC8C;
 }
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.user_img{
+border-radius:  128px;
+width: 44px;
+}
+
+.user_padding{
+    padding: 4px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; 
+    /* width and height can be anything, as long as they're equal */
+}
+.navbar li { color: #000 } 
 
 .cover-container {
 	width: 100%;
@@ -55,6 +79,7 @@
 	width: 100%;
     position: fixed;
     bottom: 0;
+    text-align: center;
 }
 
 .lead {

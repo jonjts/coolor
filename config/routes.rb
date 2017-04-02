@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   end
 
   get '/:locale' => 'home#index', locale: /en|pt-BR/
-  get '/auth/spotify/callback', to: 'home#spotify',  locale: /en|pt/
+  get '/auth/spotify/callback', to: 'home#spotify',  locale: /en|pt-BR/
+  get '/home/playlist', to: 'home#playlist',  locale: /en|pt-BR/
+  get '/home/spotify',  locale: /en|pt-BR/
   root :to => "home#index"
 end

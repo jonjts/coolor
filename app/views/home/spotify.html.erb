@@ -11,10 +11,13 @@
 <div class="container">
   <div class="row" style="text-align: center;padding-bottom: 67px;">
     <div class="col-xs-12" style="padding-bottom: 10px;">
-      <%= link_to (fa_icon "", text: "", class: "fa-2x") , '/auth/spotify', class: 'btn btn-lg btn-default  circle', id: "the_color" %>
     </div>
-    <div class="col-md-12 "  >
-      <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:3rgsDhGHZxZ9sB9DQWQfuf" width="200" height="300" frameborder="0" allowtransparency="true" class="btn-block"></iframe>
+    <%= form_tag(home_playlist_path, method: "get", remote: true, format: :js) do %>
+      <%= hidden_field_tag("color_selected", "") %>
+      <%= submit_tag("", class: 'btn btn-lg btn-default  circle', id: "the_color") %>
+    <% end %>
+    <br>
+    <div id="div_player" class="col-md-12 "  >
     </div>
   </div>
 </div>
@@ -25,19 +28,21 @@
 </footer>
 <script type="text/javascript">
   $(document).ready(function() {
-                  var animate_loop, colors, i;
-                  colors = ['#FFB30C', '#58EC00', '#0087EC', '#EEEEEE', '#FF5A00'];
-                  i = 0;
-                  animate_loop = function() {
-                      $('.btn').addClass('magictime vanishIn');
-                      $('#the_color').animate({
-                          backgroundColor: colors[i++ % colors.length]}, 3000, function() {
-                              animate_loop();
+                            var animate_loop, colors, i;
+                            colors = ['#58EC00', '#0087EC', '#CC0000', '#FF5A00'];
+                            i = 0;
+                            animate_loop = function() {
+                              $('.btn').addClass('magictime vanishIn');
+                              var c = colors[i++ % colors.length];
+                              $('#color_selected').val(c);
+                              $('#the_color').animate({
+                                backgroundColor: c}, 3000, function() {
+                                  animate_loop();
+                                });
+                            };
+                            animate_loop();
                           });
-                  };
-                  animate_loop();
-              });
-                document.addEventListener("turbolinks:load", function() {
+                           document.addEventListener("turbolinks:load", function() {
   
-                });
+                           });
 </script>

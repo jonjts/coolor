@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Last.fm API Ruby client
+gem 'lastfm-client', :git => 'http://github.com/pch/lastfm-client.git'
 # gem for magic.css
 gem "magic-rails"
 # jQuery UI dependency.

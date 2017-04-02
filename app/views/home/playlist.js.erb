@@ -1,0 +1,3 @@
+$("#player").remove();
+
+$("#div_player").append("<%= escape_javascript(render partial: 'player', locals: { playlist: @playlist } ) %>");  

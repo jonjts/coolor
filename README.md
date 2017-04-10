@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application recommends Spotify playlists using colors to find it.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby 2.2.6
 
-* System dependencies
+* Rails 5.0
 
-* Configuration
+* Postgres SQL
 
-* Database creation
+* Spotify API
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Last.fm API

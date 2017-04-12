@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action do
-    I18n.locale = params[:locale] || extract_locale_from_accept_language_header
+    I18n.locale = params[:locale] || session[:language] || extract_locale_from_accept_language_header
   end
 
   def default_url_options

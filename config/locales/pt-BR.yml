@@ -2,6 +2,9 @@ pt-BR:
   links:
     desenvolvido_por: "Desenvolvido por "
     log_in: "Entre com o Spotify"
+  infos:
+    portuges: "Portugês"
+    ingles: "Inglês"
   texts:
     sobre: "Coolor é uma aplicação que prover músicas utilizando os sentimentos encontrados nas cores selecionadas pelo usuário. Utilize sua conta do spotify para experimentar."
   activerecord:

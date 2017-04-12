@@ -23,6 +23,9 @@ en:
   links:
     desenvolvido_por: "Developed by "
     log_in: "Sign in with Spotify"
+  infos:
+    portuges: "Portuguese"
+    ingles: "English"
   texts:
     sobre: "Coolor is an application to provide songs using fellings found in colors selected by user. Use your spotify account to try it."
   activerecord:

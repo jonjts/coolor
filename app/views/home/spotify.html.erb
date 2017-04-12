@@ -21,6 +21,7 @@
     </div>
   </div>
 </div>
+<%= render 'info'%>
 <footer class="mastfoot">
   <div class="inner">
     <p><%= t('links.desenvolvido_por')%> <a href="https://twitter.com/jonjts"  target="_blank">@jonjts</a></p>
@@ -28,21 +29,21 @@
 </footer>
 <script type="text/javascript">
   $(document).ready(function() {
-                            var animate_loop, colors, i;
-                            colors = ['#58EC00', '#0087EC', '#CC0000', '#FF5A00'];
-                            i = 0;
-                            animate_loop = function() {
-                              $('.btn').addClass('magictime vanishIn');
-                              var c = colors[i++ % colors.length];
-                              $('#color_selected').val(c);
-                              $('#the_color').animate({
-                                backgroundColor: c}, 3000, function() {
-                                  animate_loop();
-                                });
-                            };
-                            animate_loop();
-                          });
-                           document.addEventListener("turbolinks:load", function() {
+                              var animate_loop, colors, i;
+                              colors = ['#58EC00', '#0087EC', '#CC0000', '#FF5A00'];
+                              i = 0;
+                              animate_loop = function() {
+                                $('.btn').addClass('magictime vanishIn');
+                                var c = colors[i++ % colors.length];
+                                $('#color_selected').val(c);
+                                $('#the_color').animate({
+                                  backgroundColor: c}, 3000, function() {
+                                    animate_loop();
+                                  });
+                              };
+                              animate_loop();
+                            });
+                             document.addEventListener("turbolinks:load", function() {
   
-                           });
+                             });
 </script>

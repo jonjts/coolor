@@ -5,8 +5,11 @@ pt-BR:
   infos:
     portuges: "Portugês"
     ingles: "Inglês"
+    close: Fechar
+    modal_title: Ajuda
   texts:
     sobre: "Coolor é uma aplicação que prover músicas utilizando os sentimentos encontrados nas cores selecionadas pelo usuário. Utilize sua conta do spotify para experimentar."
+    help: Para iniciar a busca de playlists, selecione o círculo quando estiver com a cor de seu agrado.
   activerecord:
     errors:
       messages:

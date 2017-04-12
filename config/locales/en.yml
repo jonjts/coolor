@@ -26,8 +26,11 @@ en:
   infos:
     portuges: "Portuguese"
     ingles: "English"
+    close: Close
+    modal_title: Help
   texts:
     sobre: "Coolor is an application to provide songs using fellings found in colors selected by user. Use your spotify account to try it."
+    help: To start searching for playlists, select the circle when you like the color.
   activerecord:
     errors:
       messages:

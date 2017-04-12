@@ -1,0 +1,7 @@
+<%= modal_dialog :id => "info_modal",
+         :header => { :show_close => true, :dismiss => 'modal', :title => t('infos.modal_title') },
+         :body   => { :content => t('texts.help')},
+         :footer => {} %>
+<script type="text/javascript">
+  $('#info_modal').modal()
+</script>
